@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navList {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: absolute;
+    top: 3%;
+    right: 4%;
+    z-index: 100;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 22px;
+    animation: navFadeRight 0.8s ease;
+}
+@keyframes navFadeRight{
+    from{
+        right: -10%;
+        opacity: 0;
+    }
+}
+* a{
+    text-decoration: none;
+    color: rgb(45, 45, 96);
+    transition: all ease 0.2s;
+}
+.navList li {
+    padding-left: 40px;
+}
+.navList a:hover{
+    text-decoration: underline;
+    font-size: 24px;
+}
+.main-container {
+    height: 80vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.blue-container{
+    height: 80vh;
+    width: 70%;
+    background-color: rgb(45, 45, 96);
+}
+.yellow-container{
+    height: 80vh;
+    width: 30%;
+    background-color: rgb(253, 253, 63);
+}
+.main-container .my-image {
+    position: absolute;
+    width: 400px;
+    top: 20%;
+    right: 20%;
+    border-radius: 15px;
+    transition: all .2s ease;
+    animation: imgFadeIn .8s ease;
+}
+.main-container .coding {
+    position: absolute;
+    width: 200px;
+    top: 67%;
+    left: 10%;
+    transition: all .2s ease;
+    animation: imgFadeLeft .8s ease;
+}
+.main-container .my-image:hover {
+    width: 405px;
+}
+@keyframes imgFadeIn {
+    from {
+        top: 0;
+        right: 20%;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes imgFadeLeft {
+    from {
+        top: 64%;
+        left: -10%;
+        opacity: 0;
+    }
+    to {
+        right: 20%;
+        opacity: 1;
+    }
+}
+.name {
+    position:absolute;
+    top: 10%;
+    left: 10%;
+    color: #fff;
+    font-size: 62px;
+    animation: enterFromLeft 0.8s ease;
+}
+
+        @keyframes enterFromLeft{
+            from{
+                top: 10%;
+                left: 0%;
+            }
+            to{
+                top: 10%;
+                left: 10%;
+            }
+        }
+
+.job{
+    position:absolute;
+    top: 25%;
+    left: 13%;
+    color: rgb(253, 253, 63);
+    font-size: 50px;
+    animation: fadeIn 0.8s ease;
+}
+@keyframes fadeIn {
+    from {
+        top: 30%;
+        left: 13%;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.para-text {
+    position: absolute;
+    font-family: 'Playfair Display', serif;
+    width: 400px;
+    height: 20px;
+    text-indent: 20px;
+    text-align: justify;
+    top: 65%;
+    right: 2%;
+    font-size: 18px;
+    animation: leftEntery 0.8s ease;
+}
+@keyframes leftEntery {
+    from{
+        top: 65%;
+        right:-10%;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.skills-container {
+    margin: 0;
+    padding-bottom:20px;
+    height: 200px;
+    position: relative;
+    background-color: rgb(112, 51, 174);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.skill-title{
+    color: #fff;
+    position: absolute;
+    top: -25%;
+    font-size: 24px;
+    animation: dropDown 0.8s ease;
+}
+@keyframes dropDown {
+    from{
+        top: -40%;
+        opacity: 0;
+    }
+}
+.skills {
+    display: flex;
+    margin: 10px 0;
+    position: absolute;
+    bottom: 30%;
+    flex-direction: row;
+    animation: fadeUp 0.8s ease-in;
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        bottom: -20%;
+    }
+    to {
+        bottom:30;
+        opacity: 1;
+    }
+}
+.skill {
+    padding:0 20px;
+    width: 200px; 
+}
+.circle-1 {
+    background-color: rgb(253, 253, 63);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.circle-2 {
+    background-color: rgb(253, 253, 63);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.circle-3 {
+    background-color: rgb(253, 253, 63);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.circle:hover {
+    width: 105px;
+    height: 105px;
+    transition: all 0.2s ease-in-out;
+}
+.my-work{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.work {
+    height: 200px;
+    background-color: rgb(255, 252, 249);
+    display: flex;
+    padding: 20px 20px;
+    animation: fadeDown 1s ease;
+}
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.work img {
+    width: 300px;
+    position: absolute;
+    right: 5%;
+    border-radius: 15px;
+    transition: all .2s ease;
+    animation: rightFade 1s ease ;
+}
+@keyframes rightFade {
+    from {
+        right:-10%;
+        opacity: 0;
+    }
+    to {
+        right: 5%;
+        opacity: 1;
+    }
+}
+
+.work img:hover {
+    width: 310px;
+    filter: brightness(80%);
+}
+.work-title {
+    padding: 5px 20px;
+    width: 70%;
+    transition: all 0.4s ease;
+}
+.work-title h1:hover {
+    text-decoration: underline;
+    transition: all 0.4s ease;
+}
+.work-title p {
+    text-align: justify;
+    font-family: 'Playfair Display', serif;
+    padding: 0 10px;
+}
+hr {
+    width: 60%;
+    border: 1px #000 solid;
+}
+.aboutMe-container {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    position: relative;
+    background-color: beige;
+}
+.aboutMe{
+    position: absolute;
+    font-size: 60px;
+    font-family: 'Bebas Neue', cursive;
+    transform: rotate(90deg);
+    top: 30%;
+    left: -5%;
+    animation: leftIn 0.8s ease;
+}
+@keyframes leftIn {
+    from {
+        top: 30%;
+        left: -20%;
+        opacity: 0;
+    }
+}
+.text-aboutMe {
+    width:400px;
+    position: absolute;
+    top:10%;
+    right: 15%;
+    text-align: justify;
+    font-family: 'Playfair Display', serif;
+}
+.my-image-2 {
+    width: 600px;
+    position: absolute;
+    border-radius: 15px;
+    top:25%;
+    left:15%;
+    z-index: 2;
+}
+.qoute-words {
+    width:400px;
+    position: absolute;
+    top:60%;
+    right: 10%;
+    text-align: justify;
+    font-family: 'Playfair Display', serif;
+}
+.red-circle-1 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top:15%;
+    left:12%;
+    background-color: rgb(112, 51, 174);
+    z-index: 2;
+}
+.red-circle-2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top: 65%;
+    left: 48%;
+    background-color: rgb(112, 51, 174);
+    z-index: 1;
+}
+.love-to{
+    color: rgb(112, 51, 174);
+}
