@@ -18,25 +18,25 @@ body {
     list-style: none;
     position: absolute;
     top: 3%;
-    right: 4%;
+    left: -40%;
     z-index: 100;
     font-family: 'Bebas Neue', cursive;
-    font-size: 22px;
+    font-size: 16px;
     animation: navFadeRight 0.8s ease;
 }
 @keyframes navFadeRight{
     from{
-        right: -10%;
+        left:-100%;
         opacity: 0;
     }
 }
 * a{
     text-decoration: none;
-    color: rgb(45, 45, 96);
+    color: #fff;
     transition: all ease 0.2s;
 }
 .navList li {
-    padding-left: 40px;
+    padding-left: 20px;
 }
 .navList a:hover{
     text-decoration: underline;
@@ -61,18 +61,18 @@ body {
 }
 .main-container .my-image {
     position: absolute;
-    width: 400px;
-    top: 20%;
-    right: 20%;
+    width: 300px;
+    top: 30%;
+    right: 10%;
     border-radius: 15px;
     transition: all .2s ease;
     animation: imgFadeIn .8s ease;
 }
 .main-container .coding {
     position: absolute;
-    width: 200px;
-    top: 67%;
-    left: 10%;
+    width: 100px;
+    top: 50%;
+    left: 5%;
     transition: all .2s ease;
     animation: imgFadeLeft .8s ease;
 }
@@ -81,8 +81,8 @@ body {
 }
 @keyframes imgFadeIn {
     from {
-        top: 0;
-        right: 20%;
+        top: 30%;
+        right: 0;
         opacity: 0;
     }
     to {
@@ -91,8 +91,8 @@ body {
 }
 @keyframes imgFadeLeft {
     from {
-        top: 64%;
-        left: -10%;
+        top: 50%;
+        left: -6%;
         opacity: 0;
     }
     to {
@@ -105,7 +105,7 @@ body {
     top: 10%;
     left: 10%;
     color: #fff;
-    font-size: 62px;
+    font-size: 30px;
     animation: enterFromLeft 0.8s ease;
 }
 
@@ -122,16 +122,16 @@ body {
 
 .job{
     position:absolute;
-    top: 25%;
+    top: 15%;
     left: 13%;
     color: rgb(253, 253, 63);
-    font-size: 50px;
+    font-size: 30px;
     animation: fadeIn 0.8s ease;
 }
 @keyframes fadeIn {
     from {
-        top: 30%;
-        left: 13%;
+        left: 0;
+        top: 15%;
         opacity: 0;
     }
     to {
@@ -141,19 +141,20 @@ body {
 .para-text {
     position: absolute;
     font-family: 'Playfair Display', serif;
-    width: 400px;
+    width: 200px;
     height: 20px;
     text-indent: 20px;
-    text-align: justify;
-    top: 65%;
-    right: 2%;
-    font-size: 18px;
+    text-align: left;
+    top: 60%;
+    left: 5%;
+    color: #fff;
+    font-size: 14px;
     animation: leftEntery 0.8s ease;
 }
 @keyframes leftEntery {
     from{
-        top: 65%;
-        right:-10%;
+        top: 60%;
+        left:-10%;
         opacity: 0;
     }
     to {
@@ -162,8 +163,8 @@ body {
 }
 .skills-container {
     margin: 0;
-    padding-bottom:20px;
-    height: 200px;
+    padding-bottom:10px;
+    height: 100px;
     position: relative;
     background-color: rgb(112, 51, 174);
     color: #000;
@@ -176,8 +177,8 @@ body {
 .skill-title{
     color: #fff;
     position: absolute;
-    top: -25%;
-    font-size: 24px;
+    top: -35%;
+    font-size: 16px;
     animation: dropDown 0.8s ease;
 }
 @keyframes dropDown {
@@ -188,9 +189,9 @@ body {
 }
 .skills {
     display: flex;
-    margin: 10px 0;
+    margin: 0;
     position: absolute;
-    bottom: 30%;
+    bottom: 5%;
     flex-direction: row;
     animation: fadeUp 0.8s ease-in;
 }
@@ -205,13 +206,13 @@ body {
     }
 }
 .skill {
-    padding:0 20px;
-    width: 200px; 
+    padding:0 10px;
+    width: 100px; 
 }
 .circle-1 {
     background-color: rgb(253, 253, 63);
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     border-radius: 50%;
     font-size: 12px;
     display: flex;
@@ -221,8 +222,8 @@ body {
 }
 .circle-2 {
     background-color: rgb(253, 253, 63);
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     border-radius: 50%;
     font-size: 12px;
     display: flex;
@@ -232,8 +233,8 @@ body {
 }
 .circle-3 {
     background-color: rgb(253, 253, 63);
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     border-radius: 50%;
     font-size: 12px;
     display: flex;
@@ -241,22 +242,20 @@ body {
     align-items: center;
     justify-content: center;
 }
-.circle:hover {
-    width: 105px;
-    height: 105px;
-    transition: all 0.2s ease-in-out;
-}
 .my-work{
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
-    
 }
 .work {
-    height: 200px;
-    background-color: rgb(255, 252, 249);
+    height: auto;
+    width: 400px;
+    background-color: rgb(249, 249, 255);
     display: flex;
-    padding: 20px 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 5px;
+    font-size: 14px;
     animation: fadeDown 1s ease;
 }
 @keyframes fadeDown {
@@ -269,9 +268,9 @@ body {
 }
 .work img {
     width: 300px;
-    position: absolute;
-    right: 5%;
+    position: relative;
     border-radius: 15px;
+    padding-top: 10px;
     transition: all .2s ease;
     animation: rightFade 1s ease ;
 }
@@ -285,35 +284,25 @@ body {
         opacity: 1;
     }
 }
-
-.work img:hover {
-    width: 310px;
-    filter: brightness(80%);
-}
 .work{
     position: relative;
     transform: translateX(150px);
     opacity: 0;
     transition: 1s all ease;
   }
-  
-  .work.active{
+.work.active{
     transform: translateY(0);
     opacity: 1;
   }
 .work-title {
-    padding: 5px 20px;
+    padding: 0px 10px;
     width: 70%;
-    transition: all 0.4s ease;
-}
-.work-title h1:hover {
-    text-decoration: underline;
     transition: all 0.4s ease;
 }
 .work-title p {
     text-align: justify;
     font-family: 'Playfair Display', serif;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 hr {
     width: 60%;
@@ -330,15 +319,15 @@ hr {
     position: absolute;
     font-size: 60px;
     font-family: 'Bebas Neue', cursive;
-    top: 30%;
-    left: -5%;
+    top: 20%;
+    left: 25%;
     transform: rotate(90deg) translateY(150px);
     opacity: 0;
     transition: all 1s ease;
 }
 .aboutMe.active{
-    top: 30%;
-    left: -5%;
+    top: 20%;
+    left: 25%;
     transform:rotate(90deg) translateY(0px);
     opacity: 1;
 }
